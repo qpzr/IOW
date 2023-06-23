@@ -1,4 +1,4 @@
-name: LOW智商检测
+name: IOW智商检测
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
