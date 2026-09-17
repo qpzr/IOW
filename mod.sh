@@ -13,4 +13,6 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 echo '修改wifi名称'
 #sed -i 's/ImmortalWrt/G-DOCK/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
  
-
+echo '最新argon主题'
+rm -rf ../feeds/luci/themes/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
