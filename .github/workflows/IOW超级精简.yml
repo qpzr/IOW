@@ -6,7 +6,8 @@ on:
     
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-25.12
+  REPO_BRANCH: master
+#  REPO_BRANCH: openwrt-25.12
   CONFIG_FILE: gdock128.config
   DIY_P1_SH: mod.sh
   TZ: Asia/Shanghai
