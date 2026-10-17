@@ -11,7 +11,7 @@ echo '去除默认bootstrap主题'
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
  
 echo '修改wifi名称'
-#sed -i 's/ImmortalWrt/G-DOCK/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i 's/ImmortalWrt/G-DOCK/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 
 echo 'luci-app-AdGuardHome'
 rm -rf feeds/luci/applications/luci-theme-adguardhome
