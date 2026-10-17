@@ -15,7 +15,7 @@ sed -i 's/ImmortalWrt/G-DOCK/g' package/network/config/wifi-scripts/files/lib/wi
 
 echo 'luci-app-AdGuardHome'
 rm -rf feeds/luci/applications/luci-theme-adguardhome
-git_clone_path main https://github.com/Lienol/openwrt-package/other/luci-app-adguardhome feeds/luci/applications/luci-theme-adguardhome
+git_clone_path main https://github.com/Lienol/openwrt-package other/luci-app-adguardhome feeds/luci/applications/luci-theme-adguardhome
 
 echo '最新argon主题'
 rm -rf ../feeds/luci/themes/luci-theme-argon
