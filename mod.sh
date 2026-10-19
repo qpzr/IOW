@@ -13,9 +13,12 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 echo '修改wifi名称'
 sed -i 's/ImmortalWrt/G-DOCK/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 
+cd package
 echo 'luci-app-AdGuardHome'
-rm -rf feeds/luci/applications/luci-theme-adguardhome
-git_clone_path main https://github.com/Lienol/openwrt-package other/luci-app-adguardhome feeds/luci/applications/luci-app-adguardhome
+rm -rf ../feeds/luci/applications/luci-theme-adguardhome
+git clone https://github.com/Lienol/openwrt-package 1 
+cp -rf ./1/other/luci-app-adguardhome luci-theme-adguardhome
+rm -rf ./1
 
 echo '最新argon主题'
 rm -rf ../feeds/luci/themes/luci-theme-argon
